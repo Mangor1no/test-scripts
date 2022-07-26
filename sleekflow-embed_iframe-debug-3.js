@@ -83,8 +83,8 @@
                 }
         }
 
-//         window.addEventListener('message', changeIFrame);
-        window.addEventListener('message', console.log);
+        window.addEventListener('message', changeIFrame);
+//         window.addEventListener('message', console.log);
 
         try
         {
