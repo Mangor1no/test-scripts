@@ -37,8 +37,6 @@
         const changeIFrame = (e) =>
         {
             console.log('changeIFrame', e);
-            if (e.origin === env)
-            {
                 if (e.data[0] === 'hasPopup') {
                     document.getElementById("travischatwidget").style.width = '300px';
                     document.getElementById("travischatwidget").style.height = '300px';
@@ -83,7 +81,6 @@
                         document.title = pageTitle;
                     }
                 }
-            }
         }
 
         window.addEventListener('message', changeIFrame);
